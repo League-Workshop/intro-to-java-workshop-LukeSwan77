@@ -1,20 +1,28 @@
 package section4;
 
+
+
+import javax.swing.JOptionPane;
+
 public class QuizGame {
+	static int score = 0;
 	
 	public static void main(String[] args) {
 		
 		// 1.  Create a variable to hold the user's score 
 		
 		// 2.  Ask the user a question 
+		String question1 = JOptionPane.showInputDialog("Who always enjoys poor health?");
+		checkAnswer (question1, "a doctor");
+		String question2 = JOptionPane.showInputDialog("What travels around the world but stays in a corner?");
+		checkAnswer (question2, "a stamp");
 		
-		// 3.  Use an if statement to check if their answer is correct
-		
-		// 4.  if the user's answer was correct, add one to their score 
-		
-		// 5.  Create more questions by repeating steps 1, 2, and 3 below. 
-		
-		// 6.  After all the questions have been asked, print the user's score 
-		
+		JOptionPane.showMessageDialog(null, score);
 	}
+
+static void checkAnswer (String question, String ans) {
+	if (question.equalsIgnoreCase(ans)) {
+		score++;
+	}
+}
 }
