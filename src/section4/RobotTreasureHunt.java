@@ -52,10 +52,20 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 		// 7. If robot is at same location as the little girl
 		//      --make a pop-up tell the robot where to go next
 		if (robotXLocation == 720 && robotYLocation == 405) {
-			JOptionPane.showMessageDialog(null, "Go to him with just one eye");
+			JOptionPane.showMessageDialog(null, "Go to him with just one robot eye");
 		}
-		
-		
+		if (robotXLocation == 585 && robotYLocation == 345) {
+			JOptionPane.showMessageDialog(null, "Arrrrrg go to the the one who belongs on my shoulder! Arrrg!");
+		}
+		if (robotXLocation == 615 && robotYLocation == 135) {
+			JOptionPane.showMessageDialog(null, "Spwaaaak! Go to the pyro boy!");
+		}
+		if (robotXLocation == 195 && robotYLocation == 375) {
+			JOptionPane.showMessageDialog(null, "Kaboooooom! Go up the skeletons nose");
+		}
+		if (robotXLocation == 255 && robotYLocation == 120) {
+			JOptionPane.showMessageDialog(null, "Yay! You win! You found the treasure!");
+		}
 		// 8. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
 		
